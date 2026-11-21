@@ -1,0 +1,26 @@
+DULCE AROMA - APLICACIÓN WEB DE ESCRITORIO
+
+ARCHIVOS
+- index.html: estructura y contenido.
+- style.css: diseño, colores y distribución.
+- script.js: navegación, catálogo, carrito, ticket y chatbot.
+
+CÓMO ABRIR EN WINDOWS
+1. Descarga y descomprime Dulce_Aroma_App.zip.
+2. Abre la carpeta Dulce_Aroma_App.
+3. Haz doble clic en index.html para abrirlo en tu navegador.
+4. Para editarlo, abre la carpeta desde Adobe Dreamweaver.
+
+CÓMO PROBAR
+- Entra a "Nuestro menú".
+- Filtra por Cafés, Pasteles o Postres.
+- Pulsa "+ Agregar" en uno o varios productos.
+- Abre "Mi pedido" y selecciona "Revisar pedido" para ver el ticket.
+- Pulsa el icono de mensaje de la esquina inferior derecha para probar el chatbot.
+
+NOTAS
+- Los productos y precios son ejemplos editables.
+- Los datos de contacto son marcadores que debes sustituir.
+- El chatbot funciona con respuestas programadas, no con inteligencia artificial conectada.
+- El pedido es una demostración: no hay pagos, pedidos reales ni base de datos.
+- Se necesita conexión a internet para cargar las fuentes de Google Fonts; sin ella se usarán fuentes alternativas.

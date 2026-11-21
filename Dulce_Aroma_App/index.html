@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dulce Aroma: cafetería y repostería artesanal.">
+  <title>Dulce Aroma | Aplicación de escritorio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="inicio">
+        <span class="brand-mark">☕</span>
+        <span><strong>Dulce Aroma</strong><small>CAFÉ & REPOSTERÍA</small></span>
+      </a>
+
+      <p class="nav-caption">MENÚ PRINCIPAL</p>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-link active" data-page="inicio"><span>⌂</span> Inicio</button>
+        <button class="nav-link" data-page="especialidades"><span>✿</span> Especialidades</button>
+        <button class="nav-link" data-page="menu"><span>▤</span> Nuestro menú</button>
+        <button class="nav-link" data-page="nosotros"><span>♡</span> Nosotros</button>
+        <button class="nav-link" data-page="contacto"><span>✉</span> Contacto</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-note">
+          <span>✦</span>
+          <strong>Momentos dulces,<br>recuerdos inolvidables.</strong>
+          <small>Hecho con pasión artesanal.</small>
+        </div>
+        <p class="copyright">© 2026 Dulce Aroma</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="page-eyebrow">BIENVENIDO A DULCE AROMA</p>
+          <h1 id="page-title">Un momento para disfrutar</h1>
+        </div>
+        <div class="top-actions">
+          <span class="open-label"><i></i> Experiencia artesanal</span>
+          <button class="cart-button" id="open-cart" aria-label="Abrir carrito">
+            🛒 <span>Mi pedido</span><b id="cart-count">0</b>
+          </button>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <!-- INICIO -->
+        <section class="page active" id="page-inicio">
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="pill">CAFÉ · POSTRES · MOMENTOS</span>
+              <h2>Un mundo de sabores<br>y momentos especiales.</h2>
+              <p>Disfruta el aroma de un buen café y el sabor de nuestra repostería artesanal. Cada detalle está hecho para compartir algo especial.</p>
+              <button class="primary-button" data-go="menu">Explorar nuestro menú <span>→</span></button>
+            </div>
+            <div class="hero-art" role="img" aria-label="Ilustración de una taza de café y un pastel">
+              <div class="sun-shape"></div>
+              <div class="coffee-cup">☕</div>
+              <div class="cake-emoji">🍰</div>
+              <span class="art-caption">100% pasión artesanal</span>
+            </div>
+          </div>
+
+          <div class="section-heading">
+            <div><span class="eyebrow">LO QUE NOS HACE ESPECIALES</span><h2>Pequeños detalles, grandes sabores</h2></div>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card"><span class="feature-icon">☕</span><h3>Café de especialidad</h3><p>Bebidas preparadas para acompañar tus mejores momentos.</p></article>
+            <article class="feature-card"><span class="feature-icon">🧁</span><h3>Repostería artesanal</h3><p>Postres y pasteles que endulzan cada ocasión.</p></article>
+            <article class="feature-card"><span class="feature-icon">♡</span><h3>Experiencias únicas</h3><p>Un espacio para disfrutar, compartir y regresar.</p></article>
+          </div>
+        </section>
+
+        <!-- ESPECIALIDADES -->
+        <section class="page" id="page-especialidades">
+          <div class="page-intro"><span class="eyebrow">NUESTRA ESENCIA</span><h2>Especialidades hechas con cariño</h2><p>Conoce las opciones que hacen de Dulce Aroma un lugar especial.</p></div>
+          <div class="specialty-grid">
+            <article class="specialty-card specialty-coffee"><div class="specialty-visual">☕</div><div><span class="eyebrow">AROMA Y SABOR</span><h3>Café de especialidad</h3><p>Opciones calientes y cremosas para disfrutar en cualquier momento.</p><button class="text-button" data-go="menu">Ver bebidas →</button></div></article>
+            <article class="specialty-card specialty-cake"><div class="specialty-visual">🎂</div><div><span class="eyebrow">DULCES MOMENTOS</span><h3>Pasteles artesanales</h3><p>Sabores clásicos para celebrar y compartir.</p><button class="text-button" data-go="menu">Ver pasteles →</button></div></article>
+            <article class="specialty-card specialty-dessert"><div class="specialty-visual">🍪</div><div><span class="eyebrow">UN ANTOJO ESPECIAL</span><h3>Postres deliciosos</h3><p>Pequeños gustos que hacen más bonito el día.</p><button class="text-button" data-go="menu">Ver postres →</button></div></article>
+          </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section class="page" id="page-menu">
+          <div class="page-intro menu-intro"><div><span class="eyebrow">PREPARADOS PARA TI</span><h2>Nuestro menú</h2><p>Elige tus favoritos y agrégalos a tu pedido.</p></div><div class="menu-search"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar producto..."></div></div>
+          <div class="filter-row" id="category-filters">
+            <button class="filter active" data-category="Todos">Todos</button>
+            <button class="filter" data-category="Cafés">Cafés</button>
+            <button class="filter" data-category="Pasteles">Pasteles</button>
+            <button class="filter" data-category="Postres">Postres</button>
+          </div>
+          <div class="product-grid" id="product-grid"></div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="page" id="page-nosotros">
+          <div class="page-intro"><span class="eyebrow">CONÓCENOS</span><h2>La esencia de Dulce Aroma</h2><p>Un proyecto creado para compartir el gusto por el café y la repostería.</p></div>
+          <div class="about-layout">
+            <div class="about-illustration">🤎<span>☕</span><span>🧁</span></div>
+            <div class="about-copy">
+              <h3>¿Quiénes somos?</h3><p>Dulce Aroma es una propuesta de cafetería y repostería que busca ofrecer momentos agradables mediante bebidas y productos dulces.</p>
+              <h3>Nuestra misión</h3><p>Ofrecer productos de calidad y una experiencia agradable para nuestros clientes.</p>
+              <h3>Nuestra visión</h3><p>Ser una cafetería reconocida por su creatividad, atención y repostería artesanal.</p>
+              <h3>Nuestros valores</h3><p>Calidad, responsabilidad, creatividad y pasión por nuestro trabajo.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="page" id="page-contacto">
+          <div class="page-intro"><span class="eyebrow">ESTAMOS PARA ATENDERTE</span><h2>Contacto</h2><p>Nos encantará saber de ti. Completa los datos de contacto reales de tu negocio.</p></div>
+          <div class="contact-grid">
+            <article class="contact-card"><span>⌖</span><h3>Ubicación</h3><p>Agrega aquí la dirección de tu cafetería.</p></article>
+            <article class="contact-card"><span>☎</span><h3>Teléfono</h3><p>Agrega aquí tu número de contacto.</p></article>
+            <article class="contact-card"><span>✉</span><h3>Correo electrónico</h3><p>Agrega aquí tu correo del negocio.</p></article>
+          </div>
+          <div class="contact-message"><div><h3>¿Tienes alguna pregunta?</h3><p>Utiliza el asistente de Dulce Aroma para consultar sobre el menú y los pedidos.</p></div><button class="primary-button" id="open-chat-contact">Abrir asistente</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- PANEL DEL CARRITO -->
+  <div class="overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi pedido</h2></div><button class="icon-button" id="close-cart" aria-label="Cerrar">×</button></div>
+    <div class="cart-items" id="cart-items"><div class="empty-cart"><span>🛍️</span><h3>Tu carrito está vacío</h3><p>Agrega algo delicioso desde nuestro menú.</p></div></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="primary-button full-button" id="review-order" disabled>Revisar pedido</button></div>
+  </aside>
+
+  <!-- MODAL DEL TICKET -->
+  <div class="modal-overlay" id="ticket-modal">
+    <div class="ticket-modal">
+      <button class="icon-button modal-close" id="close-ticket">×</button>
+      <div class="ticket-brand">☕<h2>Dulce Aroma</h2><span>CAFÉ & REPOSTERÍA</span></div>
+      <h3>Resumen de tu pedido</h3>
+      <p class="ticket-date" id="ticket-date"></p>
+      <div id="ticket-lines"></div>
+      <div class="ticket-total"><span>TOTAL</span><strong id="ticket-total">$0.00</strong></div>
+      <p class="ticket-thanks">¡Gracias por elegir Dulce Aroma!</p>
+      <button class="primary-button full-button" id="finish-order">Finalizar pedido de demostración</button>
+    </div>
+  </div>
+
+  <!-- CHATBOT -->
+  <section class="chat-widget" id="chat-widget">
+    <div class="chat-header"><div><strong>Asistente Dulce Aroma</strong><small>Atención al cliente</small></div><button id="close-chat" aria-label="Cerrar chat">×</button></div>
+    <div class="chat-messages" id="chat-messages"><div class="bot-message">¡Hola! Bienvenido a Dulce Aroma. ¿En qué puedo ayudarte? Puedes preguntarme por el menú, precios u horarios.</div></div>
+    <form id="chat-form" class="chat-form"><input id="chat-input" type="text" placeholder="Escribe tu pregunta..." autocomplete="off"><button type="submit">➤</button></form>
+  </section>
+  <button class="chat-launcher" id="chat-launcher" aria-label="Abrir asistente">✉</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
